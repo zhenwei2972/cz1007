@@ -8,7 +8,7 @@ int main()
     /* Write your program code here */
     for (n = 1; n <= 10; n++)
     {
-        denominator *= n;
+        denominator *= n; //factorial
         numerator *= x;
         result += numerator / denominator;
     }
