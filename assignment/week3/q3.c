@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+//By Iskandar
 int sumSqDigits1(int num);
 void sumSqDigits2(int num, int *result);
 int main()

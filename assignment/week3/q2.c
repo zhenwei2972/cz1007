@@ -1,5 +1,6 @@
 #include <stdio.h>
 //Declaration
+//By YongQiang
 void readInput(int *id, int *noOfHours, int *payRate);
 double computeSalary1(int noOfHours, int payRate);
 void computeSalary2(int noOfHours, int payRate, double *grossPay);

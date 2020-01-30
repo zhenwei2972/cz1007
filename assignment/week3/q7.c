@@ -1,5 +1,8 @@
+//
+// Created by Sky Livingston on 30/1/20.
+//
+
 #include <stdio.h>
-#include <math.h>
 
 float power1(float num, int p);
 void power2(float num, int p, float *result);
@@ -17,9 +20,30 @@ int main()
 }
 float power1(float num, int p)
 {
-    return pow(num,p);
+    float WorkingValue = num;
+    for (int i = p; i > 1; i--){
+        WorkingValue = WorkingValue * num;
+    }
+
+    for (int i = p; i < 1; i++){
+        WorkingValue = WorkingValue / num;
+    }
+    // addition one divison for original init value of num*1 in numerator
+
+    return p != 0 ? WorkingValue : 1;
+
 }
 void power2(float num, int p, float *result)
 {
-    *result = pow(num,p);
+    float WorkingValue = num;
+    for (int i = p; i > 1; i--){
+        WorkingValue = WorkingValue * num;
+    }
+
+    for (int i = p; i < 1; i++){
+        WorkingValue = WorkingValue / num;
+    }
+    // addition one divison for original init value of num*1 in numerator
+
+    *result = p != 0 ? WorkingValue : 1;
 }

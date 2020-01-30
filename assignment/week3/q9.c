@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//By Iskandar and Zhen Wei
 int perfectProd1(int num);
 void perfectProd2(int num, int *prod);
 int main()
@@ -27,11 +27,14 @@ int perfectProd1(int num)
             if (i % j == 0)
             {
                 sum += j;
+                printf("%d \n",sum);
+
             }
         }
         if (sum == i)
         {
             result *= i;
+            printf("Perfect Number %d \n",i);
         }
     }
     return result;

@@ -1,4 +1,5 @@
 #include <stdio.h>
+//By Zhen Wei
 int reverseDigits1(int num);
 void reverseDigits2(int num, int *result);
 int main()

@@ -1,3 +1,7 @@
+//
+// Created by Sky Livingston on 30/1/20.
+//
+
 #include <stdio.h>
 int divide1(int m, int n, int *r);
 void divide2(int m, int n, int *q, int *r);
@@ -15,11 +19,23 @@ int main()
 }
 int divide1(int m, int n, int *r)
 {
-    *r = m % n;
-    return m / n;
+    int nCount = 0;
+    while (m > 0) {
+        m -= n;
+        nCount++;
+    }
+    *r = n + m;
+    return m < 0 ? nCount - 1 : nCount ;
+
 }
 void divide2(int m, int n, int *q, int *r)
 {
-    *q = m / n;
-    *r = m % n;
+    int nCount = 0;
+    while (m > 0) {
+        m -= n;
+        nCount++;
+    }
+    *r = n + m;
+    *q = m < 0 ? nCount - 1 : nCount ;
+
 }

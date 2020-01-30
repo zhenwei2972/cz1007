@@ -1,4 +1,5 @@
 #include <stdio.h>
+//By Iskandar
 int gcd1(int num1, int num2);
 void gcd2(int num1, int num2, int *result);
 int main()
