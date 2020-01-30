@@ -24,7 +24,7 @@ int main()
 }
 void readInput(int *id, int *noOfHours, int *payRate)
 {
-    printf("Enter ID :");
+    printf("Enter ID (-1 to end): \n");
     scanf("%d", id);
     if (*id != -1)
     {
