@@ -124,12 +124,13 @@ int square1(int num)
         oddnum += 2;
     }
     return result;
+    
 }
 void square2(int num, int *result)
 {
     int odd = 1;
     *result = 0;
-    for (int i = 1; i <= num; i++)
+    for (int i = 0; i < num; i++)
     {
         *result += odd;
         odd += 2;
