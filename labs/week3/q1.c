@@ -117,6 +117,7 @@ void digitPos2(int num, int digit, int *result)
 int square1(int num)
 {
     int result = 0, oddnum = 1;
+    if(num == 0) return 0;
     for (int i = 0; i < num; i++)
     {
         result += oddnum;
