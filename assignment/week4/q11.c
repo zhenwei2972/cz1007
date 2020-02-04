@@ -18,22 +18,26 @@ int main()
 }
 void compress2D(int data[SIZE][SIZE], int rowSize, int colSize)
 {
-    int pre,count;
+    int pre, count;
     for (int i = 0; i < rowSize; i++)
     {
         pre = 2;
         count = 1;
         for (int j = 0; j < colSize; j++)
         {
-            if (pre == data[i][j])count++;
+            if (pre == data[i][j])
+                count++;
             else
             {
-                if(j !=0) {printf("%d %d ", pre ,count);}
+                if (j != 0)
+                {
+                    printf("%d %d ", pre, count);
+                }
                 pre = data[i][j];
-                count = 1;        
+                count = 1;
             }
         }
-        printf("%d %d ", pre ,count);
+        printf("%d %d ", pre, count);
         printf("\n");
     }
 }
