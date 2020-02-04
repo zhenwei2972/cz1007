@@ -3,11 +3,9 @@
 //
 
 #include <stdio.h>
-#include <stdbool.h>
 
 int countEvenDigits1(int number);
 void countEvenDigits2(int number, int *count);
-bool isOdd(int number);
 
 int main()
 {
@@ -22,31 +20,22 @@ int main()
 int countEvenDigits1(int number)
 {
     int EvenCount = 0;
-    do{
-        if (!isOdd(number % 10 )){
-            EvenCount++;
-        }
-        number = number / 10;
+    int totaldigit = log10(number) + 1;
+    for (int i = 0; i < totaldigit; i++)
+    {
+        if (number % 2 == 0) EvenCount++;
 
-    }while(number % 10 != 0);
+        number /= 10;
+    }
     return EvenCount;
-
 }
 void countEvenDigits2(int number, int *count)
 {
-    int EvenCount = 0;
-    do{
-        if (!isOdd(number % 10 )){
-            EvenCount++;
-        }
-        number = number / 10;
-
-    }while(number % 10 != 0);
-    *count = EvenCount;
+    *count = 0;
+    int totaldigit = log10(number) + 1;
+    for (int i = 0; i < totaldigit; i++)
+    {
+        if (number % 2 == 0) *count += 1;
+        number /= 10;
+    }
 }
-
-bool isOdd(int number)
-{
-    return number % 2;
-}
-*/
