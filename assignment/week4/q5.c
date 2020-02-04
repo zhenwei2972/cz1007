@@ -1,4 +1,5 @@
 #include <stdio.h>
+//By Yong Qiang
 int platform1D(int ar[], int size);
 int main()
 {

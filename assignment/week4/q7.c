@@ -1,4 +1,5 @@
 #include <stdio.h>
+//By Yong Qiang
 void findAverage2D(float matrix[4][4]);
 int main()
 { 

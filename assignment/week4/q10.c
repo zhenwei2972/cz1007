@@ -1,4 +1,5 @@
 #include <stdio.h>
+//By Yong Qiang
 #define SIZE 10
 #define INIT_VALUE 999
 int symmetry2D(int M[][SIZE], int rowSize, int colSize);

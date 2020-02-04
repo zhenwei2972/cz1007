@@ -1,4 +1,5 @@
 #include <stdio.h>
+//By Iskandar
 #define SIZE 10
 void transpose2D(int ar[][SIZE], int rowSize, int colSize);
 void display(int ar[][SIZE], int rowSize, int colSize);

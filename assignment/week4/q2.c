@@ -1,4 +1,5 @@
 #include <stdio.h>
+//By Yong Qiang
 void find2Max1D(int ar[], int size, int *max1, int *max2);
 int main()
 {
