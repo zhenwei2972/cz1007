@@ -19,42 +19,43 @@ int main()
 int perfectProd1(int num)
 {
     int result = 1;
-    for (int i = 1; i <= num; i++)
+    int sum = 0, p, i;
+    for (i = 1; i <= num; i++)
     {
-        int sum = 0;
-        for (int j = 1; j < i; j++)
+        p = 1;
+        while (p <= (i / 2))
         {
-            if (i % j == 0)
-            {
-                sum += j;
-                printf("%d \n",sum);
-
-            }
+            if (i % p == 0)
+                sum = sum + p;
+            p++;
         }
         if (sum == i)
         {
+            printf("Perfect numbers: %d \n", i);
             result *= i;
-            printf("Perfect Number %d \n",i);
         }
+        sum = 0;
     }
     return result;
 }
 void perfectProd2(int num, int *prod)
 {
     *prod = 1;
-    for (int i = 1; i <= num; i++)
+    int sum = 0, p, i;
+    for (i = 1; i <= num; i++)
     {
-        int sum = 0;
-        for (int j = 1; j < i; j++)
+        p = 1;
+        while (p <= (i / 2))
         {
-            if (i % j == 0)
-            {
-                sum += j;
-            }
+            if (i % p == 0)
+                sum = sum + p;
+            p++;
         }
         if (sum == i)
         {
+            printf("Perfect numbers: %d \n", i);
             *prod *= i;
         }
+        sum = 0;
     }
 }
