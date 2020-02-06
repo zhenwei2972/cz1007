@@ -24,9 +24,7 @@ void diagonals2D(int ar[][SIZE], int rowSize, int colSize, int
     *sum1 = *sum2 =0;
 
     for(int i=0;i<rowSize;i++){
-        for(int j=0;j<colSize;j++){
-            if(i == j) *sum1 += ar[i][j];
-        }
+        *sum1 += ar[i][i];
     }
     int row = 0;
     while(row != rowSize|| colSize-1 > 0) 
