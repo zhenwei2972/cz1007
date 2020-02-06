@@ -27,3 +27,4 @@ int platform1D(int ar[], int size)
   return count = (total > count)? total : count;
    
 } 
+//test case 3 and 4 failing 
