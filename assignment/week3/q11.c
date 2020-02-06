@@ -14,7 +14,7 @@ int main()
 }
 int reverseDigits1(int num)
 {
-    int r;
+    int r =0;
     while (num != 0)
     {
         r = r * 10;
